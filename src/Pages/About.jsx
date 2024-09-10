@@ -95,7 +95,7 @@ if(navi){
 */
  return clod &&(
     <div className="mx-2 box-border bg-gray-200 py-5 mt-14 text-center font-serif pb-10 text-center">
-      <h1>this is About page</h1>
+      <h1>this is About page </h1>
    
       </div>
       
