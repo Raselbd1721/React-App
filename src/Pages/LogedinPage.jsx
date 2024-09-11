@@ -23,17 +23,7 @@ export default function LogedinPage(){
   
  axios.defaults.withCredentials=true
  
-   const callApi=async()=>{
-    try{
-      const res=await axios.get('https://ecommerce-app-5dnf.onrender.com/products/islogin')
-      if(res.data){
-     setIsLo(true)
-      }
-    }catch(error){
-      setIsLo(false)
-      console.log(error)
-    }
-  }
+   
  
 const callApi=async()=>{
     try{
