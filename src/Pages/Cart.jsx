@@ -6,6 +6,9 @@ import {setNavi,removeFromCart,incQty,decQty,getOrder,addToCart,setLoadings} fro
 import { CiCirclePlus,CiCircleMinus} from "react-icons/ci";
 import { RxCrossCircled } from "react-icons/rx";
 import "../Components/Op.css"
+
+import {setLs,RemoveLs,getLs,callIslogin} from "../Helper/HelperLs.jsx";
+
 import toast from 'react-hot-toast';
 
 import axios from 'axios'

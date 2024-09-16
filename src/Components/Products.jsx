@@ -42,7 +42,7 @@ const SelRef=useRef()
     try{
       
      // const res=await axios.get(`http://localhost:3000/products/app?page=${currentPage}&&search=${category}`)
-      const res=await callIslogin({action:"get",url:`https://ecommerce-app-5dnf.onrender.com/products/category/app?page=${currentPage}&&search=${category}`})
+      const res=await callIslogin({action:"get",url:`https://ecommerce-app-5dnf.onrender.com/products/app?page=${currentPage}&&search=${category}`})
      //const newData=await res.json()
      await setTotalPage(res.data.totalPage)
      await setData(res.data.allProducts)
