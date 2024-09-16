@@ -11,7 +11,7 @@ import "./Components/Op.css"
 import {useDispatch,useSelector } from "react-redux";
 import {setNavi,setLoadings} from "./Components/EcomReducer.jsx";
 import toast, { Toaster } from 'react-hot-toast';
-
+import {setLs,RemoveLs,getLs,callIslogin} from "./Helper/HelperLs.jsx";
 import axios from "axios"
 
 const App=()=>{
@@ -24,7 +24,8 @@ const App=()=>{
   axios.defaults.withCredentials=true
   const callApi=async()=>{
     try{
-      const res=await axios.get('http://localhost:3000/products/islogin')
+      //const res=await axios.get('http://localhost:3000/products/islogin')
+           const res=await callIslogin({action:"get",url:'https://ecommerce-app-5dnf.onrender.com/products/islogin'})
      setIsLoading(false)
     }catch(error){
       setIsLoading(true)

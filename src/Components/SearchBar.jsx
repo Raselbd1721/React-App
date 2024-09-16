@@ -3,6 +3,7 @@ import { useState,useRef,useEffect } from 'react'
 import {useDispatch,useSelector} from "react-redux";
 import {getCategory,selCategory,getCat,setLogin} from "./EcomReducer"
 import {ProductData} from "../Data/ProductData.jsx"
+import {setLs,RemoveLs,getLs,callIslogin} from "../Helper/HelperLs.jsx";
 import axios from "axios"
 const SearchBar=()=>{
   
@@ -86,8 +87,8 @@ const getVal=(e)=>{
 axios.defaults.withCredentials=true
   const callApi=async()=>{
     try{
-      const res=await axios.get('http://localhost:3000/products/islogin')
-      
+      //const res=await axios.get('http://localhost:3000/products/islogin')
+      const res=await callIslogin({action:"get",url:'https://ecommerce-app-5dnf.onrender.com/products/islogin'})
      setClod(true)
      //dispatch(setLoadings(false))
       

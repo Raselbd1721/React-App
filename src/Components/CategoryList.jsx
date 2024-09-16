@@ -1,6 +1,7 @@
 
 import React,{useState,useEffect} from "react"
 import {CategoryData} from "../Data/CategoryData.jsx"
+import {setLs,RemoveLs,getLs,callIslogin} from "../Helper/HelperLs.jsx";
 import "../Components/Op.css"
 import '../App.css'
 import { v4 as uuid } from "uuid";
@@ -27,8 +28,9 @@ const CategoryList=()=>{
         axios.defaults.withCredentials=true
   const callApi=async()=>{
     try{
-      const res=await axios.get("http://localhost:3000/products/category")
+     // const res=await axios.get("http://localhost:3000/products/category")
      //const newData=await res.json()
+     const res=await callIslogin({action:"get",url:'https://ecommerce-app-5dnf.onrender.com/products/category'})
      setClod(true)
      await setData(res.data.allCategory)
     }catch(error){
