@@ -9,6 +9,7 @@ import {Link} from "react-router-dom"
 import "../Components/Op.css"
 import {useDispatch,useSelector } from "react-redux";
 import {setNavi,setLogin,setLoadings} from "../Components/EcomReducer.jsx";
+import {setLs,RemoveLs,getLs,callIslogin} from "../Helper/HelperLs.jsx";
 import toast,{Toaster} from 'react-hot-toast';
 import axios from 'axios'
 export default function About(){
@@ -27,7 +28,9 @@ export default function About(){
   const callApi=async()=>{
     try{
       
-      const res=await axios.get('http://localhost:3000/products/islogin')
+     // const res=await axios.get('http://localhost:3000/products/islogin')
+      const res=await callIslogin({action:"get",url:"https://ecommerce-app-5dnf.onrender.com/products/islogin"})
+      
      // console.log(res.data)
     dispatch(setLoadings(false))
       setClod(true)
