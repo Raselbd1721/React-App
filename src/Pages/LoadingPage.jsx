@@ -1,14 +1,8 @@
 
 import { useState, CSSProperties } from "react";
 import HashLoader from "react-spinners/HashLoader";
-
-
-
-
 export default function LoadingPage({isLoading}){
   let [color, setColor] = useState("#ffffff");
-
- 
   
   return isLoading &&(
     <div className="text-4xl text-pink-900 inset-0 bg-white z-10 backdrop-blur-3xl fixed">
