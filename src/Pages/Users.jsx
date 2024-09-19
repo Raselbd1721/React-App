@@ -188,7 +188,7 @@ const editUser=(val)=>{
     
   },[currentPage,search])
   return userRole.role&&(
-        <div className="mx-2 box-border bg-gray-200 py-5 mt-14 text-center font-serif pb-10 md:pb-40">
+        <div className="mx-2 box-border bg-gray-200 py-5 mt-14 text-center font-serif pb-10 md:pb-28">
      <h1 className="mb-5">this is {userRole.role} Page</h1>
     <div className="my-1">
         <input type="text" placeholder="Users Search here" name="search" className="p-2 border-2 border-solid hover:border-pink-600 outline-none rounded-lg mb-2 w-[75%]" value={todo} onChange={(e)=>handleSearch(e)} required/>
