@@ -92,7 +92,7 @@ callApi()
   
   
   return(
-     <div className="mx-2 max-w-[400px] box-border bg-gray-200 py-5 mt-14 text-center font-serif pb-10">
+     <div className="mx-2 max-w-[400px] box-border bg-gray-200 py-5 mt-14 text-center font-serif pb-10 mx-auto">
    {otp?<h1 className="mb-5">this is Otp:{otp}</h1> : <h1 className="mb-5">this is Otp Page</h1>}
 <div>
   <form onSubmit={handleSubmit}>

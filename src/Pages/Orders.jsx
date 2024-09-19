@@ -94,7 +94,7 @@ const handleSearch=(e)=>{
   },[currentPage,search])
   
   return clod &&(
-    <div className="mx-2 box-border bg-gray-200 py-5 mt-14 text-center font-serif pb-10">
+    <div className="mx-2 box-border bg-gray-200 py-5 mt-14 text-center font-serif pb-10 md:pb-28">
       <h1 className="mb-5 font-bold">this is Orders page</h1>
       <div className="text-center border-2 border-blue-600 border-solid rounded-3xl  shadow-[3px_5px_5px_gray] transform transition ease-in-out duration-500 hover:scale-110 w-[330px] mx-auto">
       <form onSubmit={handleSub}>
