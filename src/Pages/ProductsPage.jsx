@@ -267,7 +267,7 @@ findUser()
       </div>
 }
     { showModal && <div ref={setRef} onClick={(e)=>closeMoal(e)} className=" text-center font-serif backdrop-blur-md fixed inset-0 z-10 flex justify-center items-center" >
-<div className="mb-32 md:mb-20">
+<div className="mb-32 md:mb-5">
       <div className="text-center py-1 border-2 border-blue-600 border-solid rounded-3xl bg-gray-100 mb-4 shadow-[3px_5px_5px_gray] transform transition ease-in-out duration-500 hover:scale-110 w-[330px] md:w-[470px] md:h-[380px] h-[375px] mx-auto">
        <div className="flex justify-end m-1">
       <RxCrossCircled onClick={()=>setShowModal(false)} className="bg-pink-600 text-white text-3xl rounded-3xl" /></div>
