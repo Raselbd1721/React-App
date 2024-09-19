@@ -305,9 +305,9 @@ const editUser=(val)=>{
           })
         }</div>}
         
-    { showModal && <div ref={setRef} onClick={(e)=>closeMoal(e)} className=" text-center font-serif backdrop-blur-md fixed inset-0 z-20 h-full flex justify-center items-center mt-14" >
-<div className="w-[400px] md:w-[550px] h-fit mb-72">
-      <div className="text-center py-1 border-2 border-blue-600 border-solid rounded-3xl bg-gray-100 mb-4 shadow-[3px_5px_5px_gray] transform transition ease-in-out duration-500 hover:scale-110 w-[330px] ms:w-[500px] md:h-[250px] mx-auto">
+    { showModal && <div ref={setRef} onClick={(e)=>closeMoal(e)} className=" text-center font-serif backdrop-blur-md fixed inset-0 z-20 flex justify-center items-center mt-14" >
+<div className="w-[400px] md:w-[550px] mb-72 md:mb-12">
+      <div className="text-center py-1 border-2 border-blue-600 border-solid rounded-3xl bg-gray-100 mb-4 shadow-[3px_5px_5px_gray] transform transition ease-in-out duration-500 hover:scale-110 w-[330px] md:w-[500px] md:h-[250px] mx-auto">
        <div className="flex justify-end m-1">
       <RxCrossCircled onClick={()=>setShowModal(false)} className="bg-pink-600 text-white text-3xl rounded-3xl" /></div>
       
