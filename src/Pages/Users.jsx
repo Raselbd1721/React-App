@@ -188,7 +188,7 @@ const editUser=(val)=>{
     
   },[currentPage,search])
   return userRole.role&&(
-        <div className="mx-2 box-border bg-gray-200 py-5 mt-14 text-center font-serif pb-10">
+        <div className="mx-2 box-border bg-gray-200 py-5 mt-14 text-center font-serif pb-10 md:pb-40">
      <h1 className="mb-5">this is {userRole.role} Page</h1>
     <div className="my-1">
         <input type="text" placeholder="Users Search here" name="search" className="p-2 border-2 border-solid hover:border-pink-600 outline-none rounded-lg mb-2 w-[75%]" value={todo} onChange={(e)=>handleSearch(e)} required/>
@@ -287,7 +287,7 @@ const editUser=(val)=>{
       
   {data?.map((val,index)=>{
           const {_id,email}=val
-            return <div key={_id} className="w-[95%] md:w-[70%] odd:bg-emerald-200 even:bg-pink-200 mx-auto border-s-4 border-s-orange-500 rounded-r-3xl shadow-[8px_5px_3px_rgba(92,80,58,0.868)] md:mt-3 md:px-3 md:py-1 md:mx-auto md:mb-8">
+            return <div key={_id} className="w-[95%] md:w-[70%] odd:bg-emerald-200 even:bg-pink-200 mx-auto border-s-4 border-s-orange-500 rounded-r-3xl shadow-[8px_5px_3px_rgba(92,80,58,0.868)] md:mt-3 md:px-3 md:py-1 md:mx-auto">
               <ul className="flex gap-1 justify-between text-black p-3">
            { /* <li> <img src={val.image} className="w-[35px] h-[35px] rounded-3xl my-[-6px]" /></li>*/}
           
